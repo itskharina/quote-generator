@@ -21,13 +21,9 @@ Users should be able to:
 
 ### Screenshots
 
-# Desktop
+#### Desktop
 
 ![](./images/desktop.png)
-
-# Mobile
-
-![](./images/mobile.png)
 
 ### Built with
 
