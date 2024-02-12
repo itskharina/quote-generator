@@ -49,12 +49,22 @@ body {
   width: 55px;
   position: absolute;
   bottom: -27px;
+  cursor: pointer;
+}
+.box button:hover {
+  box-shadow: 0 0 1em 0.2em hsl(150, 100%, 66%);
 }
 .box button:disabled {
   background-color: #8a8686;
 }
+.box button:disabled:hover {
+  box-shadow: none;
+}
 .box .divide {
-  padding-bottom: 50px;
+  padding-bottom: 55px;
+  padding-top: 10px;
+  width: 90%;
+  height: auto;
 }
 
 .attribution {
@@ -71,4 +81,23 @@ body {
 }
 .attribution a {
   color: hsl(228, 58%, 75%);
+}
+
+@media (max-width: 475px) {
+  .box {
+    width: 90%;
+    min-width: 0;
+  }
+  .box p {
+    font-size: 1.5rem;
+  }
+  .box button {
+    width: 45px;
+    height: 45px;
+    bottom: -20px;
+  }
+  .box button img {
+    width: 20px;
+    height: 20px;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -60,14 +60,26 @@ body {
         width: 55px;
         position: absolute;
         bottom: -27px;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 0 1em 0.2em $green;
+        }
 
         &:disabled {
             background-color: #8a8686;
+
+            &:hover {
+                box-shadow: none;
+            }
         }
     }
 
     .divide {
-        padding-bottom: 50px;
+        padding-bottom: 55px;
+        padding-top: 10px;
+        width: 90%;
+        height: auto;
     }
 }
 
@@ -85,5 +97,27 @@ body {
 
     a {
         color: hsl(228, 58%, 75%);
+    }
+}
+
+@media (max-width: 475px) {
+    .box {
+        width: 90%;
+        min-width: 0;
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        button {
+            width: 45px;
+            height: 45px;
+            bottom: -20px;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 }
